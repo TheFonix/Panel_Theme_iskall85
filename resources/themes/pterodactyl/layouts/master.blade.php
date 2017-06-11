@@ -78,7 +78,7 @@
                                 <a href="#" data-action="control-sidebar" data-toggle="tooltip" data-placement="bottom" title="{{ @trans('strings.servers') }}"><i class="fa fa-server"></i></a>
                             </li>
                             <li>
-                                <a href="mailto:surpport@scaldayt.co.uk" data-toggle="tooltip" data-placement="bottom" title="Email Surpport"><i class="fa fa-envelope"></i></a>
+                                <a href="mailto:surpport@iskall85.com" data-toggle="tooltip" data-placement="bottom" title="Email Surpport"><i class="fa fa-envelope"></i></a>
                             </li>
                             @if(Auth::user()->isRootAdmin())
                                 <li>
