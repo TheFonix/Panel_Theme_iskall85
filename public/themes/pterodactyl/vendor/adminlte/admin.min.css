@@ -1578,7 +1578,7 @@ a:hover, a:active, a:focus {
 .box {
 	position: relative;
 	border-radius: 3px;
-	background: rgba(25, 30, 34, 1)!important;;
+	background: rgba(25, 30, 34, 0.65)!important;;
 	border-top: 3px solid #A4FD0B;
 	margin-bottom: 20px;
 	width: 100%;
