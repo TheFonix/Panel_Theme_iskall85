@@ -83,7 +83,7 @@
                                 </td>
                             </tr>
                         @endforeach
-               </tbody>			   
+               </tbody>
             </table>
             </div>
             @if($servers->hasPages())

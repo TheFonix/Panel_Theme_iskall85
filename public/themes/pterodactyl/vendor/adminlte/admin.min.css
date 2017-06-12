@@ -94,7 +94,7 @@ body {
 }
 
 .main-footer {
-	background: rgba(25, 30, 34, 1)!important;;
+	background: rgba(25, 30, 34, 0)!important;;
 	padding: 15px;
 	color: #fff;
 	border-top: 1px solid #d2d6de
@@ -1899,7 +1899,7 @@ a:hover, a:active, a:focus {
 	border-bottom-left-radius: 3px;
 	border-top: 1px solid #444;
 	padding: 10px;
-	background-color: rgba(25, 30, 34, 1)!important;
+	background-color: rgba(25, 30, 34, 0)!important;
 }
 
 .chart-legend {
@@ -5189,3 +5189,4 @@ table.text-center, table.text-center td, table.text-center th {
 		background-color: #001F3F;
 	}
 }
+span.hidden {display:none;}
