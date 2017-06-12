@@ -50,7 +50,7 @@
     <body class="hold-transition login-page">
         <div class="login-box">
             <div class="login-logo">
-                     <img src="img/title.png" alt="Smiley face" height="108" width="380">
+                     <img src="https://i.gyazo.com/959c754207cd40f0c3e04b9775af0904.png" alt="Smiley face" height="108" width="380">
             </div>
             @yield('content')
             <p class="small text-muted">

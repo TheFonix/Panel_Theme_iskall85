@@ -50,11 +50,11 @@
                             <th data-field="username" data-sortable="true"> @lang('strings.username')</th>
                             <th data-field="name" data-sortable="true"> @lang('strings.name')</th>
                             <th data-field="node" data-sortable="true"> @lang('strings.node')</th>
-                            <th data-field="connection" data-sortable="true"> @lang('strings.connection')</th>
-                            <th data-field="memory" data-sortable="true"> @lang('strings.memory')</th>
-                            <th data-field="cpu" data-sortable="true"> @lang('strings.cpu')</th>
-                            <th data-field="owner" data-sortable="true"> @lang('strings.owner')</th>
-                            <th data-field="status" data-sortable="true">@lang('strings.status')</th>
+                            <th class="text-center" data-field="connection" data-sortable="true"> @lang('strings.connection')</th>
+                            <th class="text-center" data-field="memory" data-sortable="true"> @lang('strings.memory')</th>
+                            <th class="text-center" data-field="cpu" data-sortable="true"> @lang('strings.cpu')</th>
+                            <th class="text-center" data-field="owner" data-sortable="true"> @lang('strings.owner')</th>
+                            <th class="text-center" data-field="status" data-sortable="true">@lang('strings.status')</th>
                         </tr>
 				</thead>
 

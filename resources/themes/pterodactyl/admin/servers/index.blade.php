@@ -57,19 +57,19 @@
                             <th data-field="name" data-sortable="true"> @lang('strings.name')</th>
                             <th data-field="node" data-sortable="true"> @lang('strings.owner')</th>
                             <th data-field="connection" data-sortable="true"> @lang('strings.username')</th>
-                            <th data-field="memory" data-sortable="true"> @lang('strings.node')</th>
-                            <th data-field="cpu" data-sortable="true"> @lang('strings.connection')</th>
-							<th data-field="owner" data-sortable="true"> @lang('strings.status')</th>
+                            <th class="text-center" data-field="memory" data-sortable="true"> @lang('strings.node')</th>
+                            <th class="text-center" data-field="cpu" data-sortable="true"> @lang('strings.connection')</th>
+							<th class="text-center" data-field="owner" data-sortable="true"> @lang('strings.status')</th>
                         </tr>
 				</thead>
 
 				<tbody>
                         @foreach($servers as $server)
                             <tr class="dynamic-update" data-server="{{ $server->uuidShort }}">
-                                <td class="text-center"><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->id }}</code></td>
-                                <td class="text-center"><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->name }}</a></td>
-								<td class="text-center"><a href="{{ route('admin.users.view', $server->user->id) }}">{{ $server->user->username }}</a></td>
-								<td class="text-center"><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->username }}</code></td>
+                                <td><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->id }}</code></td>
+                                <td><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->name }}</a></td>
+								<td><a href="{{ route('admin.users.view', $server->user->id) }}">{{ $server->user->username }}</a></td>
+								<td><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->username }}</code></td>
                                 <td>@if(Auth::user()->isRootAdmin())<a href="nodes/view/{{ $server->node->id }}">@endif{{ $server->node->name }}</td>
                                 <td><code>{{ $server->allocation->alias }}:{{ $server->allocation->port }}</code></td>
 								<td class="text-center">
