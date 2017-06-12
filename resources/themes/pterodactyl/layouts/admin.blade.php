@@ -40,6 +40,7 @@
         @section('scripts')
             {!! Theme::css('vendor/select2/select2.min.css') !!}
             {!! Theme::css('vendor/bootstrap/bootstrap.min.css') !!}
+			{!! Theme::css('vendor/bootstrap/bootstrap-table.min.css') !!}
             {!! Theme::css('vendor/adminlte/admin.min.css') !!}
             {!! Theme::css('vendor/adminlte/colors/skin-blue.min.css') !!}
             {!! Theme::css('vendor/sweetalert/sweetalert.min.css') !!}
@@ -136,6 +137,81 @@
                                 <i class="fa fa-archive"></i> <span>Packs</span>
                             </a>
                         </li>
+						<li class="treeview">
+                                    <a href="#">
+                                        <i class="fa fa-gears"></i>
+                                        <span>Network Storage</span>
+                                        <span class="pull-right-container">
+                                            <i class="fa fa-angle-left pull-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="treeview-menu">
+										<li class="{{ Route::currentRouteName() !== 'i1ndex' ?: 'active' }}">
+											<a href="http://cloud.iskall85.co.uk">
+											<i class="fa fa-cloud"></i> <span>Cloud Server</span>
+											</a>
+										</li>
+										<li class="{{ Route::currentRouteName() !== 'i1ndex' ?: 'active' }}">
+											<a href="http://iskall85.co.uk">
+											<i class="fa fa-microchip"></i> <span>Solder Page</span>
+											</a>
+										</li>
+										<li class="{{ Route::currentRouteName() !== 'i1ndex' ?: 'active' }}">
+											<a href="http://iskall85.co.uk">
+											<i class="fa fa-folder-open"></i> <span>Solder Repo</span>
+											</a>
+										</li>
+                                    </ul>
+                                </li>
+
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="fa fa-gears"></i>
+                                        <span>Network information</span>
+                                        <span class="pull-right-container">
+                                            <i class="fa fa-angle-left pull-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="treeview-menu">
+										<li class="{{ Route::currentRouteName() !== 'i1ndex' ?: 'active' }}">
+											<a href="http://wiki.iskall85.co.uk">
+											<i class="fa fa-cloud"></i> <span>Wiki</span>
+											</a>
+										</li>
+										<li class="{{ Route::currentRouteName() !== 'i1ndex' ?: 'active' }}">
+											<a href="http://status.iskall85.co.uk">
+											<i class="fa fa-microchip"></i> <span>Network Status</span>
+											</a>
+										</li>
+										<li class="{{ Route::currentRouteName() !== 'i1ndex' ?: 'active' }}">
+											<a href="http://structure.iskall85.co.uk">
+											<i class="fa fa-folder-open"></i> <span>Network Structure</span>
+											</a>
+										</li>
+                                    </ul>
+                                </li>
+
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="fa fa-gears"></i>
+                                        <span>Other Links</span>
+                                        <span class="pull-right-container">
+                                            <i class="fa fa-angle-left pull-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="treeview-menu">
+										<li class="{{ Route::currentRouteName() !== 'i1ndex' ?: 'active' }}">
+											<a href="http://dhmini.xyz">
+											<i class="fa fa-cloud"></i> <span>URL Shortner</span>
+											</a>
+										</li>
+										<li class="{{ Route::currentRouteName() !== 'i1ndex' ?: 'active' }}">
+											<a href="https://mail.iskall85.co.uk">
+											<i class="fa fa-microchip"></i> <span>Mail Server</span>
+											</a>
+										</li>
+                                    </ul>
+                                </li>
                     </ul>
                 </section>
             </aside>
@@ -182,6 +258,7 @@
 
             {!! Theme::js('js/laroute.js') !!}
             {!! Theme::js('vendor/jquery/jquery.min.js') !!}
+			{!! Theme::js('vendor/jquery/bootstrap-table.min.js') !!}
             {!! Theme::js('vendor/sweetalert/sweetalert.min.js') !!}
             {!! Theme::js('vendor/bootstrap/bootstrap.min.js') !!}
             {!! Theme::js('vendor/slimscroll/jquery.slimscroll.min.js') !!}

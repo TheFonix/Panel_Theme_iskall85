@@ -50,29 +50,28 @@
                 </div>
             </div>
             <div class="box-body table-responsive no-padding">
-            <table class="table table-hover" data-toggle="table" data-sort-order="desc">
-               <thead>
-				        <tr>
-                            <th data-field="username" data-sortable="true"> @lang('strings.id')</th>
-                            <th data-field="name" data-sortable="true"> @lang('strings.name')</th>
-                            <th data-field="node" data-sortable="true"> @lang('strings.owner')</th>
-                            <th data-field="connection" data-sortable="true"> @lang('strings.username')</th>
-                            <th data-field="memory" data-sortable="true"> @lang('strings.node')</th>
-                            <th data-field="cpu" data-sortable="true"> @lang('strings.connection')</th>
-							<th data-field="owner" data-sortable="true"> @lang('strings.status')</th>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <th>ID</th>
+                            <th>Server Name</th>
+                            <th>Owner</th>
+                            <th>Username</th>
+                            <th>Node</th>
+                            <th>Connection</th>
+                            <th></th>
                         </tr>
-				</thead>
-
-				<tbody>
-                        @foreach($servers as $server)
-                            <tr class="dynamic-update" data-server="{{ $server->uuidShort }}">
-                                <td class="text-center"><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->id }}</code></td>
-                                <td class="text-center"><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->name }}</a></td>
-								<td class="text-center"><a href="{{ route('admin.users.view', $server->user->id) }}">{{ $server->user->username }}</a></td>
-								<td class="text-center"><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->username }}</code></td>
-                                <td>{{ $server->node->name }}</td>
-                                <td><code>{{ $server->allocation->alias }}:{{ $server->allocation->port }}</code></td>
-								<td class="text-center">
+                        @foreach ($servers as $server)
+                            <tr data-server="{{ $server->uuidShort }}">
+                                <td><code>{{ $server->uuidShort }}</code></td>
+                                <td><a href="{{ route('admin.servers.view', $server->id) }}">{{ $server->name }}</a></td>
+                                <td><a href="{{ route('admin.users.view', $server->user->id) }}">{{ $server->user->username }}</a></td>
+                                <td>{{ $server->username }}</td>
+                                <td><a href="{{ route('admin.nodes.view', $server->node->id) }}">{{ $server->node->name }}</a></td>
+                                <td>
+                                    <code>{{ $server->allocation->alias }}:{{ $server->allocation->port }}</code>
+                                </td>
+                                <td class="text-center">
                                     @if($server->suspended)
                                         <span class="label bg-maroon">Suspended</span>
                                     @elseif(! $server->installed)
@@ -83,8 +82,8 @@
                                 </td>
                             </tr>
                         @endforeach
-               </tbody>			   
-            </table>
+                    </tbody>
+                </table>
             </div>
             @if($servers->hasPages())
                 <div class="box-footer with-border">
