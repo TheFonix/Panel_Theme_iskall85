@@ -70,7 +70,7 @@
                                 <td class="text-center"><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->name }}</a></td>
 								<td class="text-center"><a href="{{ route('admin.users.view', $server->user->id) }}">{{ $server->user->username }}</a></td>
 								<td class="text-center"><a href="{{ route('server.index', $server->uuidShort) }}">{{ $server->username }}</code></td>
-                                <td>{{ $server->node->name }}</td>
+                                <td>@if(Auth::user()->isRootAdmin())<a href="nodes/view/{{ $server->node->id }}">@endif{{ $server->node->name }}</td>
                                 <td><code>{{ $server->allocation->alias }}:{{ $server->allocation->port }}</code></td>
 								<td class="text-center">
                                     @if($server->suspended)
