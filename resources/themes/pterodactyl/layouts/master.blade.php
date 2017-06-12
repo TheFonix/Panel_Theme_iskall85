@@ -42,6 +42,7 @@
             {!! Theme::css('vendor/adminlte/admin.min.css') !!}
             {!! Theme::css('vendor/adminlte/colors/skin-blue.min.css') !!}
             {!! Theme::css('vendor/sweetalert/sweetalert.min.css') !!}
+			{!! Theme::css('vendor/bootstrap/bootstrap-table.min.css') !!}
             {!! Theme::css('vendor/animate/animate.min.css') !!}
             {!! Theme::css('css/pterodactyl.css') !!}
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -354,6 +355,7 @@
 
             {!! Theme::js('js/laroute.js') !!}
             {!! Theme::js('vendor/jquery/jquery.min.js') !!}
+			{!! Theme::js('vendor/jquery/bootstrap-table.min.js') !!}
             {!! Theme::js('vendor/sweetalert/sweetalert.min.js') !!}
             {!! Theme::js('vendor/bootstrap/bootstrap.min.js') !!}
             {!! Theme::js('vendor/slimscroll/jquery.slimscroll.min.js') !!}
