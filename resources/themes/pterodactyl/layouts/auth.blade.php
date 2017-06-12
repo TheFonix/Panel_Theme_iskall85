@@ -30,7 +30,7 @@
         <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="/favicons/manifest.json">
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#bc6e3c">
-        <link href="http://newsite.iskall85.com/assets/panel/favicon.ico?29452" rel="icon">
+        <link href="img/favicon.ico?29452" rel="icon">
         <meta name="msapplication-config" content="/favicons/browserconfig.xml">
         <meta name="theme-color" content="#367fa9">
 
@@ -50,7 +50,7 @@
     <body class="hold-transition login-page">
         <div class="login-box">
             <div class="login-logo">
-                     <img src="http://newsite.iskall85.com/assets/panel/title.png" alt="Smiley face" height="108" width="380">
+                     <img src="img/title.png" alt="Smiley face" height="108" width="380">
             </div>
             @yield('content')
             <p class="small text-muted">

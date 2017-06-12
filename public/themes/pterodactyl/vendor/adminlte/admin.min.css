@@ -50,7 +50,7 @@ body {
 }
 
 .layout-boxed {
-	background: url('../img/boxed-bg.jpg') repeat fixed
+	background: url("https://i.gyazo.com/0af894212b8dfea82d425079aea3bf0b.jpg") repeat fixed
 }
 
 .content-wrapper, .right-side, .main-footer {
@@ -89,7 +89,7 @@ body {
 
 .content-wrapper, .right-side {
 	min-height: 100%;
-	background-image: url("http://newsite.iskall85.com/assets/panel/body-bg.jpg");
+	background-image: url("https://i.gyazo.com/0af894212b8dfea82d425079aea3bf0b.jpg");
 	z-index: 800
 }
 
@@ -3419,7 +3419,7 @@ table.text-center, table.text-center td, table.text-center th {
 }
 
 .login-page, .register-page {
-		background-image: url("http://newsite.iskall85.com/assets/panel/body-bg.jpg");
+		background-image: url("https://i.gyazo.com/0af894212b8dfea82d425079aea3bf0b.jpg");
 }
 
 .login-box, .register-box {
