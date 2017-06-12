@@ -9,7 +9,7 @@
 }
 .bootstrap-table .table {
     margin-bottom: 0!important;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
     border-collapse: collapse!important;
     border-radius: 1px
 }
@@ -31,7 +31,7 @@
 .fixed-table-container {
     position: relative;
     clear: both;
-    border: 1px solid #ddd;
+    border: 1px solid transparent;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px
@@ -44,7 +44,7 @@
     overflow: hidden
 }
 .fixed-table-footer {
-    border-top: 1px solid #ddd
+    border-top: 1px solid transparent
 }
 .fixed-table-body {
     overflow-x: auto;
@@ -58,7 +58,7 @@
     height: 0;
     padding: 0;
     margin: 0;
-    border-left: 1px solid #ddd
+    border-left: 1px solid transparent
 }
 .fixed-table-container thead th:focus {
     outline: transparent solid 0
@@ -97,7 +97,7 @@
     width: 30px
 }
 .fixed-table-container tbody td {
-    border-left: 1px solid #ddd
+    border-left: 1px solid transparent
 }
 .fixed-table-container tbody tr:first-child td {
     border-top: none
@@ -210,7 +210,7 @@
 }
 .bootstrap-table .table>thead>tr>th {
     vertical-align: bottom;
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid transparent
 }
 .bootstrap-table .table thead>tr>th {
     padding: 0;
